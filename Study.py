@@ -1,18 +1,11 @@
 import telebot
-# from extensions import APIException, Convertor
-# from config import TOKEN, exchanges
-# import traceback
-
 exchange = {
     'доллар': 'USD',
     'евро': 'EUR',
     'рубль': 'RUB'
 }
 TOKEN = '6445152015:AAEpkto75yARsR43_euOFL8QGGtRnvvgHt8'
-
 bot = telebot.TeleBot(TOKEN)
-
-
 @bot.message_handlers(commands=['start', 'help'])
 def start(message: telebot.types.Message):
     text = 'Приветствие!'
